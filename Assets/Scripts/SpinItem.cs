@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class SpinItem : MonoBehaviour {
-    [SerializeField] private float _speed = 300;
+    [SerializeField] private float _speed = 0;
 
     [SerializeField] private GameObject _topBorder;
     [SerializeField] private GameObject _bottomBorder;
