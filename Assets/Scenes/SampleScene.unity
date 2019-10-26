@@ -466,5 +466,20 @@ PrefabInstance:
       propertyPath: _itemRandomizer
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 598706559510167008, guid: 126b09e49615caf4a89dee0de7a5a0d8,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.00006866455
+      objectReference: {fileID: 0}
+    - target: {fileID: 8316454923509113232, guid: 126b09e49615caf4a89dee0de7a5a0d8,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.00006866455
+      objectReference: {fileID: 0}
+    - target: {fileID: 2572191360369382527, guid: 126b09e49615caf4a89dee0de7a5a0d8,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.00006866455
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 126b09e49615caf4a89dee0de7a5a0d8, type: 3}
