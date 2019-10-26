@@ -11,10 +11,12 @@ public class MainSpinItem : MonoBehaviour {
 
     private void Start() {
         _rectTransform = GetComponent<RectTransform>();
-        _startY = _rectTransform.localPosition.y;
+        _startY = _rectTransform.offsetMax.y;
+        Debug.Log(_startY);
     }
     private void Update() {
-        if (_isNeedToStop && _rectTransform.localPosition.y.Equals(_startY)) {
+        Debug.Log(_rectTransform.offsetMax.y);
+        if (_isNeedToStop && IsStartPosition()) {
             Debug.Log("Stop");
             foreach (SpinItem item in _spinItems) {
                 item.StopMoving();
@@ -26,10 +28,17 @@ public class MainSpinItem : MonoBehaviour {
         _isNeedToStop = true;
     }
 
+    private bool IsStartPosition() {
+        float dif = _rectTransform.offsetMax.y - _startY;
+        if (Mathf.Abs(dif) < 3) return true;
+        else return false;
+        //Mathf.RoundToInt(_rectTransform.offsetMax.y).Equals(Mathf.RoundToInt(_startY))
+    }
+
     public void StartRotating() {
         _isNeedToStop = false;
         foreach (SpinItem item in _spinItems) {
-            item.StartMoving(1000f);
+            item.StartMoving(2000f);
         }
     }
 }
