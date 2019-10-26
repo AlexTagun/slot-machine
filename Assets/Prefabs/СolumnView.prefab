@@ -311,6 +311,11 @@ PrefabInstance:
       propertyPath: _bottomBorder
       value: 
       objectReference: {fileID: 406528663800023776}
+    - target: {fileID: 1134789637844620919, guid: 54d20dc850a51614297cb5e408bf3154,
+        type: 3}
+      propertyPath: _itemRandomizer
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1134789637857185660, guid: 54d20dc850a51614297cb5e408bf3154,
         type: 3}
       propertyPath: _topBorder
@@ -321,6 +326,11 @@ PrefabInstance:
       propertyPath: _bottomBorder
       value: 
       objectReference: {fileID: 406528663800023776}
+    - target: {fileID: 1134789637857185660, guid: 54d20dc850a51614297cb5e408bf3154,
+        type: 3}
+      propertyPath: _itemRandomizer
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1134789637857185657, guid: 54d20dc850a51614297cb5e408bf3154,
         type: 3}
       propertyPath: _columnView
@@ -336,6 +346,11 @@ PrefabInstance:
       propertyPath: _bottomBorder
       value: 
       objectReference: {fileID: 406528663800023776}
+    - target: {fileID: 1134789637809790978, guid: 54d20dc850a51614297cb5e408bf3154,
+        type: 3}
+      propertyPath: _itemRandomizer
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54d20dc850a51614297cb5e408bf3154, type: 3}
 --- !u!224 &406528662686646661 stripped

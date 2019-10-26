@@ -30,7 +30,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 1654094435236870813}
+  - {fileID: 2315841756578610356}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!1001 &1242380468044822841
+--- !u!1001 &2876341774680194832
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -109,7 +109,7 @@ PrefabInstance:
     - target: {fileID: 561072348549055397, guid: a63b7713ae7295044921faa238971ca1,
         type: 3}
       propertyPath: m_Name
-      value: Scroll View
+      value: SlotMachineView
       objectReference: {fileID: 0}
     - target: {fileID: 561072348549055396, guid: a63b7713ae7295044921faa238971ca1,
         type: 3}
@@ -218,9 +218,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a63b7713ae7295044921faa238971ca1, type: 3}
---- !u!224 &1654094435236870813 stripped
+--- !u!224 &2315841756578610356 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 561072348549055396, guid: a63b7713ae7295044921faa238971ca1,
     type: 3}
-  m_PrefabInstance: {fileID: 1242380468044822841}
+  m_PrefabInstance: {fileID: 2876341774680194832}
   m_PrefabAsset: {fileID: 0}
