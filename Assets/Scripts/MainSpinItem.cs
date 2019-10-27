@@ -8,19 +8,32 @@ public class MainSpinItem : MonoBehaviour {
     private bool _isNeedToStop = false;
     private RectTransform _rectTransform;
     private float _startY;
+    private float _startSpeed = 1000f;
+    private float _currSpeed;
+
 
     private void Start() {
         _rectTransform = GetComponent<RectTransform>();
         _startY = _rectTransform.offsetMax.y;
         Debug.Log(_startY);
+        _currSpeed = _startSpeed;
     }
-    private void Update() {
-        Debug.Log(_rectTransform.offsetMax.y);
-        if (_isNeedToStop && IsStartPosition()) {
-            Debug.Log("Stop");
-            foreach (SpinItem item in _spinItems) {
-                item.StopMoving();
+    private void FixedUpdate() {
+       // Debug.Log(_rectTransform.offsetMax.y);
+        if (_isNeedToStop) {
+            if (IsCloseToStartPosition()) {
+                _currSpeed -= 500 * Time.deltaTime;
+                if (_currSpeed < 150) _currSpeed = 150f;
+                Debug.Log(_currSpeed);
+                SetSpeed(_currSpeed);
             }
+            if (IsStartPosition()) {
+                Debug.Log("Stop");
+                foreach (SpinItem item in _spinItems) {
+                    item.StopMoving();
+                }
+            }
+            
         }
     }
 
@@ -35,10 +48,22 @@ public class MainSpinItem : MonoBehaviour {
         //Mathf.RoundToInt(_rectTransform.offsetMax.y).Equals(Mathf.RoundToInt(_startY))
     }
 
+    private bool IsCloseToStartPosition() {
+        if (_rectTransform.offsetMax.y < _startY) return true;
+        else return false;
+    }
+
+    private void SetSpeed(float speed) {
+        foreach (SpinItem item in _spinItems) {
+            item.SetSpeed(speed);
+        }
+    }
+
     public void StartRotating() {
         _isNeedToStop = false;
+        _currSpeed = _startSpeed;
         foreach (SpinItem item in _spinItems) {
-            item.StartMoving(2000f);
+            item.StartMoving(_startSpeed);
         }
     }
 }

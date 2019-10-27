@@ -15,7 +15,7 @@ public class SpinItem : MonoBehaviour {
 
     private float _topY;
     private float _bottomY;
-    private float _currSpeed;
+
     private bool _isMoving = false;
 
     private void Start() {
@@ -27,7 +27,7 @@ public class SpinItem : MonoBehaviour {
     }
 
     private void FixedUpdate() {
-        if(_isMoving) transform.Translate(0, -_currSpeed * Time.deltaTime, 0);
+        if(_isMoving) transform.Translate(0, -_speed * Time.deltaTime, 0);
        // Debug.Log(transform.position);
 
         if(transform.position.y <= _bottomY - _rectTransform.rect.height / 2) {
@@ -48,19 +48,13 @@ public class SpinItem : MonoBehaviour {
         _speed = speed;
     }
 
-    public void StartMoving() {
-        _currSpeed = _speed;
-        _isMoving = true;
-    }
-
     public void StartMoving(float speed) {
         _speed = speed;
-        _currSpeed = _speed;
         _isMoving = true;
     }
 
     public void StopMoving() {
-        _currSpeed = 0;
+        _speed = 0;
         _isMoving = false;
     }
 
