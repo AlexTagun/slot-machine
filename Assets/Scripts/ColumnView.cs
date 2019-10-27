@@ -31,4 +31,14 @@ public class ColumnView : MonoBehaviour {
         _mainSpinItem.StopRotating();
     }
 
+    IEnumerator StartSpin() {
+        StartRotating();
+        yield return new WaitForSeconds(0.5f);
+        StopRotating();
+    }
+
+    public void OnButtonPressed() {
+        StartCoroutine(StartSpin());
+    }
+
 }
