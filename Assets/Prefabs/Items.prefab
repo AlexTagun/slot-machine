@@ -114,7 +114,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 620be751cca55ce4993a9812cd2debbf, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -204,7 +204,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 74a6302c11f119242b096d27258d55cf, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -295,7 +295,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 2d523664457837f4ca5c694235f83026, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -457,7 +457,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 0bf6c0f7c5c7c2b4092d27760989235c, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -530,7 +530,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _itemImageList:
-  - {fileID: 21300000, guid: 2d523664457837f4ca5c694235f83026, type: 3}
-  - {fileID: 21300000, guid: 620be751cca55ce4993a9812cd2debbf, type: 3}
-  - {fileID: 21300000, guid: 0bf6c0f7c5c7c2b4092d27760989235c, type: 3}
-  - {fileID: 21300000, guid: 74a6302c11f119242b096d27258d55cf, type: 3}
+  - {fileID: 21300000, guid: 75642687ddd9ae14c9de478154202595, type: 3}
+  - {fileID: 21300000, guid: e9425da9d8f0c7b4784ca5a5528d32d0, type: 3}
+  - {fileID: 21300000, guid: 523892b3922d7dd4da20eb203e80b3fa, type: 3}
+  - {fileID: 21300000, guid: 82e48239c2a8e014bacb71c55ff2d042, type: 3}
+  - {fileID: 21300000, guid: f3705f9934451c54dae366c9c3d940bf, type: 3}
+  - {fileID: 21300000, guid: 05b9ee50c65e8134eb8f4146684c231f, type: 3}
+  - {fileID: 21300000, guid: 1c6d15026b2562243b1a78fe97da7459, type: 3}
